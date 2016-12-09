@@ -86,24 +86,208 @@ Version 1.0
 Introduction
 \end_layout
 
+\begin_layout Subsection
+Purpose
+\end_layout
+
+\begin_layout Standard
+The purpose of this document is to show:
+\end_layout
+
+\begin_layout Itemize
+the high level architecture
+\end_layout
+
+\begin_layout Itemize
+the main design patterns
+\end_layout
+
+\begin_layout Itemize
+the main components,
+\end_layout
+
+\begin_layout Itemize
+their interfaces and the way they are connected
+\end_layout
+
+\begin_layout Subsection
+Scope
+\end_layout
+
+\begin_layout Standard
+\noindent
+This project has two targets of people: the user and the operator
+\end_layout
+
+\begin_layout Standard
+\noindent
+The user will be able to sign up and make reservations, while the system
+ will check if the data provided by the users are correct and will compute
+ the cost of the ride.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+The operator will receive notifications about problems with cars
+\end_layout
+
+\begin_layout Subsection
+Definitions, acronyms, abbreviations
+\end_layout
+
+\begin_layout Subsection
+Reference documents
+\end_layout
+
+\begin_layout Itemize
+Rasd
+\end_layout
+
+\begin_layout Itemize
+Assignments AA 2016-2017
+\end_layout
+
 \begin_layout Section
 Architectural design
 \end_layout
 
-\begin_layout Section
-Algorithm design
+\begin_layout Subsection
+Overview
 \end_layout
 
-\begin_layout Section
-User Interface Design
+\begin_layout Standard
+The system has a three tier architecture, we have:
 \end_layout
 
-\begin_layout Section
-Requirements Traceability
+\begin_layout Itemize
+The client and the operator devices, plus the web server
 \end_layout
 
-\begin_layout Section
-Effort Spent
+\begin_layout Itemize
+an application server which handles the business logic
+\end_layout
+
+\begin_layout Itemize
+a database server
+\end_layout
+
+\begin_layout Subsection
+High level components and their interaction
+\end_layout
+
+\begin_layout Standard
+\noindent
+The central server handles the communication between the different components.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The client can send requests from the app or from the web server and receives
+ notifications.
+ The requests that can be sent from the web server are a subset of the requests
+ available via app.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The car handler sends notifications about his status(battery level, current
+ charge, position) and receives request for internal state change from the
+ server (reservation and unlocking).
+\end_layout
+
+\begin_layout Standard
+\noindent
+The power stations only send informations about the number of free plugs.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+The payment handler receives payment data and returns a positive answer
+ if the payment is accepted through an external interface.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The map provider simply receives positions and returns a map through an
+ external interface.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename workspace/SoftEng2/DD/Immagini/Component diagram
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Component view
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename workspace/SoftEng2/DD/Immagini/component details.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Client controller: handles login, registration and in general all the client
+ data 
+\end_layout
+
+\begin_layout Itemize
+Reservation controller: handles the reservation, the unlock requests and
+ submits the final charge to the payment controller.
+ It includes the car controller in order to receive data concerning position,
+ number of passengers and every information needed to compute the final
+ charge
+\end_layout
+
+\begin_layout Itemize
+Car controller: manages all the data from the car sensors.
+ It is also in charge of notifying the operator for all the problems stated
+ in the RASD
+\end_layout
+
+\begin_layout Itemize
+Payment controller: manages the real communication with the payment handler.
+ It also interacts with the Client controller when the client decides to
+ pay off his debts.
+\end_layout
+
+\begin_layout Standard
+\noindent
+The power stations communicate directly with the model, since the only informati
+on they share is the number of free plugs.
+\end_layout
+
+\begin_layout Standard
+\noindent
+Every component interacts with the model, which is the only link to the
+ DBMS.
+ 
+\end_layout
+
+\begin_layout Subsection
+Deploying view
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename workspace/SoftEng2/DD/Immagini/Deployment diagram.png
+	scale 30
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
