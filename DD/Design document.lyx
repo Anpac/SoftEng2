@@ -200,14 +200,15 @@ The client can send requests from the app or from the web server and receives
 
 \begin_layout Standard
 \noindent
-The car handler sends notifications about his status(battery level, current
- charge, position) and receives request for internal state change from the
- server (reservation and unlocking).
+The car handler is the software installed onto each car: it sends notifications
+ about its status(battery level, current charge, position) and receives
+ request for internal state change from the server (reservation and unlocking).
 \end_layout
 
 \begin_layout Standard
 \noindent
-The power stations only send informations about the number of free plugs.
+The power station manager is installed in each power station: it only send
+ informations about the number of free plugs.
  
 \end_layout
 

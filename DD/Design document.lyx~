@@ -82,6 +82,15 @@ Andrea Pace, Lorenzo Petrangeli, Tommaso Paulon
 Version 1.0
 \end_layout
 
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
