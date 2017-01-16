@@ -1363,7 +1363,7 @@ Test Item(s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Car Handler -> Car Component
+Car Handler -> Car Controller
 \end_layout
 
 \end_inset
@@ -3026,8 +3026,11 @@ the Reservation Controller data about the travel
 \end_layout
 
 \begin_layout Plain Layout
-and the final amount of money submitted to the Payment Handler will be compared
- to the expected result
+and the final amount of money submitted to the Payment Handler 
+\end_layout
+
+\begin_layout Plain Layout
+will be compared to the expected result
 \end_layout
 
 \end_inset
@@ -3486,11 +3489,33 @@ For what concerns the web application it is enough to create various HTTP
 \end_layout
 
 \begin_layout Section
-Stubs and Drivers
+Program Stubs and Test Data Required
 \end_layout
 
 \begin_layout Standard
-manual engine started
+According to the bottom-up strategy we need several drivers to perform integrati
+on tests.
+ We need a driver for each integration test, which has to be provided with
+ the logic for the right method/API calls and the expected outputs.
+ Some of the most relevant drivers are:
+\end_layout
+
+\begin_layout Itemize
+Client driver: required in order to test the server components when the
+ client is not fully developed.
+ It is also necessary to test the APIs between the client and the server
+\end_layout
+
+\begin_layout Itemize
+Car Handler and Car Controller driver: simulates the situations when a car
+ notifies the system that the engine has been turned on or when the data
+ concerning the payment are sent to the server
+\end_layout
+
+\begin_layout Standard
+For what concerns test data we need the database structure shown in the
+ Design Document(BCE diagram) to be fully implemented and some user, car
+ and power station data stored in the database.
 \end_layout
 
 \begin_layout Section
@@ -3499,11 +3524,54 @@ Tools and Test Equipment Required
 
 \begin_layout Standard
 We plan to use the following tools in order to accomplish the integration
- tests:
+ tests.
+\end_layout
+
+\begin_layout Subsection
+Arquillian
+\end_layout
+
+\begin_layout Standard
+Aquillian is a test framework that we plan to use for integration testing.
+ It allows the tests to be deployed on a server and it is extremely useful
+ if the target of the tests is a JEE server.
+ 
+\end_layout
+
+\begin_layout Subsection
+JUnit
+\end_layout
+
+\begin_layout Standard
+JUnit is normally used for unit tests, which are supposed to be produced
+ before the integration tests.
+ It can be used anyway with Arquillian for integration tests.
+\end_layout
+
+\begin_layout Subsection
+Mockito
+\end_layout
+
+\begin_layout Standard
+Mockito is often used as a unit test tool to create mocks.
+ Stubs are more general than mocks but Mockito can be useful along with
+ JUnit ti perform integration tests.
+\end_layout
+
+\begin_layout Section
+Hours of work
 \end_layout
 
 \begin_layout Itemize
-Arquillian:
+Andrea Pace: 25 hours
+\end_layout
+
+\begin_layout Itemize
+Lorenzo Petrangeli:
+\end_layout
+
+\begin_layout Itemize
+Tommaso Paulon: 
 \end_layout
 
 \end_body
