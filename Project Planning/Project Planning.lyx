@@ -6339,11 +6339,57 @@ Schedule
 \end_layout
 
 \begin_layout Section
-Resource allocation
+Resource allocations
 \end_layout
 
 \begin_layout Section
 Risk management
+\end_layout
+
+\begin_layout Standard
+In this section we are going to analyze some risks that could affect the
+ project.
+ 
+\end_layout
+
+\begin_layout Standard
+Due to inconveniences during the development of the project the deadlines
+ could be delayed.
+ In that case, we may release a beta version of the application and we may
+ release the stable version later.
+ 
+\end_layout
+
+\begin_layout Standard
+Since the team often works remotely, another possible problem could be the
+ lack of communication among team members; the solution is defining explicitly
+ the role of each team member and writing a clear and complete documentation.
+ 
+\end_layout
+
+\begin_layout Standard
+A large number of users could cause scalability issue; in that case we may
+ ask a third part provider to host our system.
+ As soon as users will start using the application, bugs in the code may
+ appear: the team will update the system in a small time working on users'
+ warnings.
+ 
+\end_layout
+
+\begin_layout Standard
+Another small risk is represented by the fact that our system uses external
+ services such as maps and payments, but the providers are very reliable
+ and this problems are unpredictable and have low chances to occur.
+\end_layout
+
+\begin_layout Standard
+Nowadays data leaks and attacks are a serious issue; to avoid this problems
+ we may encrypt the communication and adopt all the security standards.
+\end_layout
+
+\begin_layout Standard
+Hardware malfunctioning could cause data loss; these problems, even if unpredict
+able, may be contained with backups and regular maintenance.
 \end_layout
 
 \begin_layout Bibliography
