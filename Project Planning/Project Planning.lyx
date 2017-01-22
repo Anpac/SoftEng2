@@ -3349,6 +3349,8 @@ Precedentedness
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 4.96
 \end_layout
 
@@ -3414,6 +3416,8 @@ Flexibility
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 4.05
 \end_layout
 
@@ -3562,6 +3566,8 @@ Risk Resolution
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 2.83
 \end_layout
 
@@ -3636,6 +3642,8 @@ Team cohesion
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 1.10
 \end_layout
 
@@ -3822,6 +3830,8 @@ Process maturity
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\series bold
 3.12
 \end_layout
 
@@ -3904,7 +3914,12 @@ Flexibility: we have strict constrains about the functionalities that we
 \end_layout
 
 \begin_layout Itemize
-Risk Resolution: TODO
+Risk Resolution: Our risk analysis has been conducted in an accurate way,
+ while not much of the whole development time was dedicated to this estimation
+ and we have valid tool supports to develop and verify architectural specs.
+ Thus the level of uncertainty in key architectural drivers such as user
+ interfaces, COTS, hardware and performance requirements is little.
+ We therefore choose a high value 
 \end_layout
 
 \begin_layout Itemize
@@ -4003,7 +4018,7 @@ Flexibility
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nominal
+Low
 \end_layout
 
 \end_inset
@@ -4012,7 +4027,7 @@ Nominal
 \begin_inset Text
 
 \begin_layout Plain Layout
-3.04
+4.05
 \end_layout
 
 \end_inset
@@ -4032,7 +4047,7 @@ Risk Resolution
 \begin_inset Text
 
 \begin_layout Plain Layout
-????????
+High
 \end_layout
 
 \end_inset
@@ -4041,7 +4056,7 @@ Risk Resolution
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+2.83
 \end_layout
 
 \end_inset
@@ -4128,7 +4143,7 @@ Total
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+16.06
 \end_layout
 
 \end_inset
@@ -4183,7 +4198,7 @@ We are in an early design phase, we don't have clear information on the
 ACAP: this value assess the analists' design and analysis ability, regardless
  of their experience.
  We think that our analysis has to be conducted in a rigorous way so we
- set this parameter to high, so the effort miltiplier will be 0.85
+ set this parameter to high
 \end_layout
 
 \begin_layout Standard
@@ -4463,8 +4478,7 @@ Effort multipliers
 PCAP: this value assess programmers' capability as a team, regardless of
  their individual experience.
  Since we are in an early design phase and we have never worked together
- we can roughly estimate this parameter and we set this parameter to high,
- that means an effort multiplier of 0.88
+ we can roughly estimate this parameter and we set this parameter to high
 \end_layout
 
 \begin_layout Standard
@@ -4743,7 +4757,7 @@ Effort multipliers
 \begin_layout Itemize
 PCON: this value refers to the project's personnel turnover: in our case
  we can't work continously through the project development so this value
- will be set to low, that means an effort multiplier of 1.12.
+ will be set to low.
  We use six months as unit of time instead of the year
 \end_layout
 
@@ -5023,8 +5037,7 @@ Effort multipliers
 \begin_layout Itemize
 RELY: this value is about the effect of a system failure.
  The worst possible problem in our project can arise if the system locks
- the car with people onboard, so this value will be set to low: a value
- of 0.92 will be chosen
+ the car with people onboard, so this value will be set to low.
 \end_layout
 
 \begin_layout Standard
@@ -5361,7 +5374,8 @@ DATA: this value is defined as the ratio of bytes in the testing database
  to SLOC in the program: the size of the database is impossible to know
  in advance but we assume to have something like 100 cars and 30 users to
  perform the tests.
- The amount of storage required can't be more than 100 MB 
+ The amount of storage required can't be more than 2 MB.
+ The D/P ratio is then 414 and a High value is chosen 
 \end_layout
 
 \begin_layout Standard
@@ -5608,15 +5622,14 @@ CPLX: this value is a subjective weighted average of five area ratings:
  provided by API calls that are probably going to be used.
  Data management operation are also very simple, so we choose a low value.
  We also need a simple graphic user interface, that means a low value.
- The overall value is low: 0.87
+ The overall value is low
 \end_layout
 
 \begin_layout Itemize
 DOCU: this value reflects the need for a complete documentation in order
  to ensure that it is suitable for the project's life-cycle needs.
  For our project this label is set to nominal, since a right-sized documentation
- is always a good practice.
- The value is 1.00
+ is always a good practice
 \end_layout
 
 \begin_layout Standard
@@ -5952,7 +5965,7 @@ Effort multipliers
 RUSE: this value represents the additional effort needed to build components
  intended for reuse on different levels.
  We don't plan to reuse our components across modules in complex and larger
- products, so we choose the nominal value, that is 1.00
+ products, so we choose the nominal value
 \end_layout
 
 \begin_layout Standard
@@ -6624,7 +6637,7 @@ Effort multipliers
 \begin_layout Itemize
 STOR: this is a measure of the main storage constraint imposed on our server:
  since we can easily afford a database with considerable capacity and we
- can rely on cloud computing, we choose the nominal value, that is 1.00
+ can rely on cloud computing, we choose the nominal value
 \end_layout
 
 \begin_layout Standard
@@ -6914,7 +6927,7 @@ Effort multipliers
 PVOL: this is a measure of the rate of major updates to our complex of hardware
  and software.
  We don't expect to change the main functionality of our system more often
- than twice a year, so we choose the nominal value: 1.00
+ than twice a year, so we choose the nominal value
 \end_layout
 
 \begin_layout Standard
@@ -7250,7 +7263,7 @@ Effort multipliers
 \begin_layout Itemize
 APEX: this is a measure of the experience of the team developing the project.
  Our experience is limited to a six-month project about a Java application,
- so we choose a low value: 1.10
+ so we choose a low value
 \end_layout
 
 \begin_layout Standard
@@ -7530,7 +7543,7 @@ Effort multipliers
 PLEX: refers to the developers acquaintance of the platform that is going
  to be used.
  We don't have experience with the Java EE platform or database development
- so we set this value to low: 1.19
+ so we set this value to low
 \end_layout
 
 \begin_layout Standard
@@ -7811,7 +7824,7 @@ LTEX: this driver reflects the project team knowledge of the programming
  language and the sofware tools(used throughout every phase from requirement
  analysis to development) to be used.
  Our knowledge is limited to the tools and the programming language highlighted
- in the PLEX driver, so we choose a low value: 1.09
+ in the PLEX driver, so we choose a low value
 \end_layout
 
 \begin_layout Standard
@@ -8091,7 +8104,7 @@ Effort multipliers
 TOOL: this drivers reflects the quality of the software tools used to develop
  this project: our application environment is a well integrated one and
  will be used through the whole project's life cycle, so we choose a high
- value: 0.90
+ value
 \end_layout
 
 \begin_layout Standard
@@ -8483,7 +8496,7 @@ Effort multipliers
 SITE: this driver reflects the communication issues caused by the site collocati
 on of the team members and by the technology used to communicate.
  Our group is located in the same city and we use efficient applications
- to communicate, so the value will be set to high: 0.93
+ to communicate, so the value will be set to high
 \end_layout
 
 \begin_layout Standard
@@ -9197,7 +9210,7 @@ SCED: this driver is a measure of the schedule compression/expansion for
  the whole project: our effort has been distributed thoroughout this semester,
  even if we will devote a consistent amount of time to analysis and design
  first and testing/inspection at the end.
- The value will be set to high: 1.00
+ The value will be set to high
 \end_layout
 
 \begin_layout Standard
@@ -9921,9 +9934,9 @@ PERS: we have High for ACAP, High for PCAP and Low for PCON, so the result
 \end_layout
 
 \begin_layout Itemize
-RCPX: we have Low for RELY, ? for DATA, Low for CPLX and Nominal for DOCU,
- so the result is ???.
- This means a ?? value: ????
+RCPX: we have Low for RELY, High for DATA, Low for CPLX and Nominal for
+ DOCU, so the result is 11.
+ This means a Low value: 0.83
 \end_layout
 
 \begin_layout Itemize
@@ -10026,7 +10039,7 @@ RCPX
 \begin_inset Text
 
 \begin_layout Plain Layout
-???
+0.83
 \end_layout
 
 \end_inset
@@ -10159,7 +10172,7 @@ Result
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+1.029
 \end_layout
 
 \end_inset
@@ -10235,7 +10248,7 @@ where:
 \end_inset
 
  is the estimated size of the project in KSLOC.
- In our case this value is 4.134
+ In our case this value is 4.823
 \end_layout
 
 \begin_layout Itemize
@@ -10294,11 +10307,31 @@ where
 \end_layout
 
 \begin_layout Standard
-Therefore E is equal to ??? and PM is equal to ???
+Therefore E is equal to 
+\lang british
+
+\begin_inset Formula $1.0706$
+\end_inset
+
+
+\lang english
+ and PM is equal to 
+\lang british
+
+\begin_inset Formula $16.29$
+\end_inset
+
+
+\lang english
+ 
 \end_layout
 
 \begin_layout Section
 Schedule
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
@@ -10353,6 +10386,30 @@ Nowadays data leaks and attacks are a serious issue; to avoid this problems
 \begin_layout Standard
 Hardware malfunctioning could cause data loss; these problems, even if unpredict
 able, may be contained with backups and regular maintenance.
+\end_layout
+
+\begin_layout Standard
+Our system doesn't require the driver licences to be really existent.
+ According to the Italian legislation it's entirely up to the driver to
+ have a valid driver license while driving.
+ Changes to this rule could require our system to check the actual existence
+ of the provided driving license numbers.
+ 
+\end_layout
+
+\begin_layout Standard
+In case of accident it's up to both the user and the company to refund other
+ people for damages.
+ We can permanently ignore this unpleasant situation by stating in the terms
+ of the service that the client must refund the company for its part and
+ therefore pay the whole sum.
+ 
+\end_layout
+
+\begin_layout Standard
+There may be a problem with competitors since it's a new market.
+ In this case we will provide new features and start an appropriate market
+ campaign.
 \end_layout
 
 \begin_layout Section
