@@ -92,6 +92,16 @@ LatexCommand tableofcontents
 Introduction
 \end_layout
 
+\begin_layout Standard
+The Project Plan documents aims at estimating the effort and the cost related
+ to the development of the PowerEnjoy project.
+ We will estimate the size of our project through Function Points(FP) and
+ then we will use COCOMO II to estimate the cost and effort of the development.
+ Then we will define a schedule for the expected tasks and the distribution
+ of the work for the components of our team.
+ Eventually a brief analysis on risks and related strategies will be shown.
+\end_layout
+
 \begin_layout Section
 Project size, cost and effort estimation
 \end_layout
@@ -985,8 +995,8 @@ UFP to SLOC conversion
 \end_layout
 
 \begin_layout Standard
-The multiplicator to convert the Unadjusted Function Points to Source Lines
- of Code for Java is
+The multiplicator to convert the Unadjusted Function Points(UFP) to Source
+ Lines of Code(SLOC) for Java is
 \series bold
  53
 \series default
@@ -1458,7 +1468,7 @@ Final bill notification
 \begin_inset Text
 
 \begin_layout Plain Layout
-Low
+Avg
 \end_layout
 
 \end_inset
@@ -2439,7 +2449,7 @@ EO
 \begin_inset Text
 
 \begin_layout Plain Layout
-Low
+Avg
 \end_layout
 
 \end_inset
@@ -2448,7 +2458,7 @@ Low
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+5
 \end_layout
 
 \end_inset
@@ -2919,7 +2929,7 @@ External Output
 \begin_inset Text
 
 \begin_layout Plain Layout
-4 · 4
+3 · 4
 \end_layout
 
 \end_inset
@@ -2928,7 +2938,7 @@ External Output
 \begin_inset Text
 
 \begin_layout Plain Layout
-0 · 5
+1 · 5
 \end_layout
 
 \end_inset
@@ -2946,7 +2956,7 @@ External Output
 \begin_inset Text
 
 \begin_layout Plain Layout
-16
+17
 \end_layout
 
 \end_inset
@@ -3109,7 +3119,7 @@ Total Points
 \begin_inset Text
 
 \begin_layout Plain Layout
-52
+48
 \end_layout
 
 \end_inset
@@ -3118,7 +3128,7 @@ Total Points
 \begin_inset Text
 
 \begin_layout Plain Layout
-28
+33
 \end_layout
 
 \end_inset
@@ -3138,7 +3148,7 @@ Total Points
 \begin_layout Plain Layout
 
 \series bold
-90
+91
 \end_layout
 
 \end_inset
@@ -10343,6 +10353,22 @@ Nowadays data leaks and attacks are a serious issue; to avoid this problems
 \begin_layout Standard
 Hardware malfunctioning could cause data loss; these problems, even if unpredict
 able, may be contained with backups and regular maintenance.
+\end_layout
+
+\begin_layout Section
+Hours of work
+\end_layout
+
+\begin_layout Itemize
+Andrea Pace: 15 hours
+\end_layout
+
+\begin_layout Itemize
+Lorenzo Petrangeli: 
+\end_layout
+
+\begin_layout Itemize
+Tommaso Paulon: 
 \end_layout
 
 \begin_layout Bibliography
