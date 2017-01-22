@@ -10330,12 +10330,88 @@ Therefore E is equal to
 Schedule
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
+Schedule introduction
+\end_layout
 
+\begin_layout Standard
+The main activities involving the project are: RASD, DD, ITPD, Project Planning,
+ Presentation, Implementation, Testing and Deployment.
+ Some tasks needs to be completed before others can begin, as shown in the
+ 
+\series bold
+dependency graph
+\series default
+ below.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dependency graph
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Activities and tasks identification
+\end_layout
+
+\begin_layout Standard
+The actual diagrams are contained in the Gantt.pdf file provided with this
+ document.
+ Those are the activities and tasks concerning the project.
+ We assume that we won't implement, test and deploy the project, as shown
+ in the Resource Allocation paragraph.
+ We added those parts to give a more realistic description of the project.
+ The period of time in which every task is active is approximate, however
+ the deadlines for the entire activities are mandatory.
+ It is expected that some tasks will be resumed after some time, depending
+ on the development of the project.
+ 
 \end_layout
 
 \begin_layout Section
 Resource allocations
+\end_layout
+
+\begin_layout Standard
+In the Gantt.pdf file there is also an overview of how the tasks from 
+\series bold
+Schedule
+\series default
+ section will be divided between the three members of the team.
+ Although each member will be actively involved in every task as a supervisor,
+ we won't assign a task to more than two members for better parallelism.
+ As mentioned in 
+\series bold
+Schedule
+\series default
+ section, some tasks won't be assigned to the members of the team.
+ Those tasks are shown as assigned to 
+\series bold
+Others
+\series default
+.
+ The periods of time in which every task is active are approximate, and
+ the percentage represents how many tasks are active for each resource (for
+ instance: 25% means that the resourse is allocated on 4 tasks).
 \end_layout
 
 \begin_layout Section
@@ -10421,7 +10497,7 @@ Andrea Pace: 15 hours
 \end_layout
 
 \begin_layout Itemize
-Lorenzo Petrangeli: 
+Lorenzo Petrangeli: 12 hours
 \end_layout
 
 \begin_layout Itemize
