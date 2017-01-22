@@ -10342,17 +10342,24 @@ The main activities involving the project are: RASD, DD, ITPD, Project Planning,
 \series bold
 dependency graph
 \series default
- below.
- 
+ below:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Immagini/precedence.jpg
+	scale 60
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout

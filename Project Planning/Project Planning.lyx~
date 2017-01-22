@@ -10353,6 +10353,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Immagini/precedence.jpg
+	scale 60
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -10374,7 +10381,7 @@ Activities and tasks identification
 \end_layout
 
 \begin_layout Standard
-The actual diagrams are contained in the Gant.pdf file provided with this
+The actual diagrams are contained in the Gantt.pdf file provided with this
  document.
  Those are the activities and tasks concerning the project.
  We assume that we won't implement, test and deploy the project, as shown
@@ -10392,7 +10399,7 @@ Resource allocations
 \end_layout
 
 \begin_layout Standard
-In the Gantt file there is also an overview of how the tasks from 
+In the Gantt.pdf file there is also an overview of how the tasks from 
 \series bold
 Schedule
 \series default
