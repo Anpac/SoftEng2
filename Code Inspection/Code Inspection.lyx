@@ -120,15 +120,46 @@ Functional role of the class
 
 \begin_layout Standard
 The EntityAutoEngine implements Create, Update, Delete and Expire operation
- depending on what is present in the parameters of the main public method
- of the class.
- It's reasonable to think that this class is mainly an entity manager, these
- four operations check if the right conditions are met before they can actually
- create/delete/update the entity.
+ depending on what is present in the parameters of the runSync method.
+ According to the discussion found at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://ofbiz.135035.n4.nabble.com/The-fancy-new-entity-auto-service-execution-engine
+-td197201.html
+\end_layout
+
+\end_inset
+
+, this class is mainly an entity manager, these four operations check if
+ the right conditions are met before they can actually create/delete/update
+ the entity.
  No direct usages of this class can be found by our Java IDE, so we suppose
  that this class is part of some kind of pattern and objects are generated
  at runtime.
- The lack of documentation/javadoc allows for this kind of hypothesis.
+ The lack of documentation/javadoc of this class allows for this kind of
+ hypothesis, since the documentation is largely missing not only in this
+ class but also in the class that is extended by our class.
+ The only javadoc found is in the GenericEngine interface, at the top of
+ the extend/implement chain, but it's not sufficient to clearly understand
+ the role of our class.
+ There are some comments within our class with some example of XML code:
+ according to the discussion found at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://ofbiz.135035.n4.nabble.com/entity-auto-td157361.html
+\end_layout
+
+\end_inset
+
+, these are example of correct XML example to be used with respect to the
+ different requests(create/delete/update/expire).
+ 
 \end_layout
 
 \begin_layout Section
