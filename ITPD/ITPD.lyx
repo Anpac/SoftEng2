@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -91,6 +93,10 @@ Introduction
 
 \begin_layout Subsection
 Revision History
+\end_layout
+
+\begin_layout Standard
+v1.1 better specification of I8 integration test
 \end_layout
 
 \begin_layout Subsection
@@ -244,7 +250,7 @@ The are actually two cycles: the Car Handler can send to the Car Controller
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="3">
-<features rotate="0" islongtable="true" longtabularalignment="center">
+<features islongtable="true" longtabularalignment="center">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
@@ -537,195 +543,10 @@ Integration test I1
 \end_layout
 
 \begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top" width="15cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Test Case Identifier
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="1" alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-TEMPLATE
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Test Item(s)
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Input Specification
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Output Specification
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Environmental Needs
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-Test Description
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -925,7 +746,7 @@ APIs and compared to the expected outputs
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -1119,7 +940,7 @@ Integration test I2
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -1322,7 +1143,7 @@ the car really locks or unlocks
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -1509,7 +1330,7 @@ Integration test I3
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -1696,7 +1517,7 @@ Integration test I4
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -1869,7 +1690,7 @@ Integration test I5
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -2063,7 +1884,7 @@ Test Description
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -2288,7 +2109,7 @@ a car
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -2457,7 +2278,7 @@ Integration test I6
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -2670,7 +2491,7 @@ according to the Design Document we don't expect errors.
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -2877,7 +2698,7 @@ are expected to be called
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="8" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -3087,7 +2908,7 @@ will be compared to the expected result
 \noindent
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -3256,7 +3077,7 @@ Integration test I7
 \begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="7" columns="2">
-<features rotate="0" tabularvalignment="middle" tabularwidth="15cm">
+<features tabularvalignment="middle" tabularwidth="15cm">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top" width="15cm">
 <row>
@@ -3477,6 +3298,76 @@ At this point of the integration test this last phase is pretty straightforward
  
 \end_layout
 
+\begin_layout Itemize
+Login: if the informations provided are correct the user must be able to
+ perform some operations: clients can perform the operation already discussed
+ and operators can change cars' state
+\end_layout
+
+\begin_layout Itemize
+Registration: if the informations provided are consistent and do not overlap
+ with previous data, the new user must be stored in the database
+\end_layout
+
+\begin_layout Itemize
+Reservation: if the client associated with the request has no pending debt
+ and no other reservations the selected car must be set to reserved in the
+ database and the other user should be notified.
+ To do so we need multiple client drivers logged in that must receive the
+ notification about the new reservation.
+\end_layout
+
+\begin_layout Itemize
+Car Unlocking: if the user associated with the request has really reserved
+ a car and his position is close enough, the car must be set to reached
+ in the database and actually unlocked
+\end_layout
+
+\begin_layout Itemize
+Delete reservation: if the client associated with the requested matches
+ the one who has reserved a car in the database and the car state is not
+ 
+\begin_inset Quotes eld
+\end_inset
+
+in use
+\begin_inset Quotes erd
+\end_inset
+
+, the reservation is canceled and the client is charged of a fee.
+ Therefore the client driver should receive a notification of debt and the
+ debt itself must be stored in the database.
+\end_layout
+
+\begin_layout Itemize
+Change payment info: we have to check if the new payment informations are
+ consistent and if so they must be stored in the database at the end of
+ the procedure
+\end_layout
+
+\begin_layout Itemize
+Money saving options: if the car is not in the 
+\begin_inset Quotes eld
+\end_inset
+
+in use
+\begin_inset Quotes erd
+\end_inset
+
+ state the returned power station must be the one correctly calculated with
+ the procedure highlighted in the design document
+\end_layout
+
+\begin_layout Itemize
+Estinguish debt: if the payment information are correct and appropriate
+ to estinguish the debt, it should be deleted from the database.
+ This test requires the payment handler's sandbox to be provided with a
+ certain number of payment informations.
+ The test will be performed by submitting informations present or absent
+ in the sandbox or correct information with unsifficient balance.
+ The results should be the ones expected
+\end_layout
+
 \begin_layout Subsection
 Other tests
 \end_layout
@@ -3514,8 +3405,8 @@ Car Handler and Car Controller driver: simulates the situations when a car
 
 \begin_layout Standard
 For what concerns test data we need the database structure shown in the
- Design Document(BCE diagram) to be fully implemented and some user, car
- and power station data stored in the database.
+ Design Document(ER diagram) to be fully implemented and some user, car,
+ power station and operator data stored in the database.
 \end_layout
 
 \begin_layout Section
@@ -3555,7 +3446,7 @@ Mockito
 \begin_layout Standard
 Mockito is often used as a unit test tool to create mocks.
  Stubs are more general than mocks but Mockito can be useful along with
- JUnit ti perform integration tests.
+ JUnit to perform integration tests.
 \end_layout
 
 \begin_layout Section
