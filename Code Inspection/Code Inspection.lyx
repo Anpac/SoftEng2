@@ -330,40 +330,63 @@ lookedUpValue
 \begin_layout Itemize
 
 \shape italic
-40.
- Check that all objects (including Strings) are compared with equals and
- not with ==:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-modelService.invoke == null (line 78) [strings comparison] 
-\end_layout
-
-\begin_layout Itemize
-modelEntity == null (line 87) [objects comparison] 
-\end_layout
-
-\begin_layout Itemize
-pkFieldNameOutOnly == null (line 104) [objects comparison] 
+41.
+ Check that displayed output is free of spelling and grammatical errors:
+ 
+\series bold
+\shape default
+party
+\series default
+ on line 296 probably is a spelling error and stands for 
+\series bold
+part
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
-lookedUpValue == null (line 387) [objects comparison] 
+
+\shape italic
+44.
+ Check that the implementation avoids “brutish programming”: 
+\series bold
+\shape default
+invokeCreate 
+\series default
+(lines 148-375) as written above is very long and the if/else construction
+ is abused.
+ The term 
+\shape italic
+“brutish programming” 
+\shape default
+refers to 
+\begin_inset Quotes eld
+\end_inset
+
+solutions where someone applies an obvious but excessive technique when
+ more refined and effective alternatives are available
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+ and surely can be used to describe the implementation of this method.
 \end_layout
 
-\begin_layout Itemize
-statusValidChange == null (line 431) [strings comparison] 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+http://users.csc.calpoly.edu/~jdalbey/SWE/CodeSmells/bonehead.html
 \end_layout
 
-\begin_layout Itemize
-lookedUpValue == null (line 531) [objects comparison] 
-\end_layout
-
-\begin_layout Itemize
-parameters.get(fieldDateNameIn) == null (line 556) [strings comparison] 
-\end_layout
-
-\end_deeper
 \end_body
 \end_document
