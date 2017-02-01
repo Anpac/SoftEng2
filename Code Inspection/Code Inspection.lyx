@@ -262,5 +262,43 @@ lookedUpValue
 \end_layout
 
 \end_deeper
+\begin_layout Itemize
+
+\shape italic
+40.
+ Check that all objects (including Strings) are compared with equals and
+ not with ==:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+modelService.invoke == null (line 78) [strings comparison] 
+\end_layout
+
+\begin_layout Itemize
+modelEntity == null (line 87) [objects comparison] 
+\end_layout
+
+\begin_layout Itemize
+pkFieldNameOutOnly == null (line 104) [objects comparison] 
+\end_layout
+
+\begin_layout Itemize
+lookedUpValue == null (line 387) [objects comparison] 
+\end_layout
+
+\begin_layout Itemize
+statusValidChange == null (line 431) [strings comparison] 
+\end_layout
+
+\begin_layout Itemize
+lookedUpValue == null (line 531) [objects comparison] 
+\end_layout
+
+\begin_layout Itemize
+parameters.get(fieldDateNameIn) == null (line 556) [strings comparison] 
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
