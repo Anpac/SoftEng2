@@ -172,6 +172,71 @@ We are going to report the issues found in the code following the checklist.
 
 \begin_layout Itemize
 
+\emph on
+11.
+ All if, while, do-while, try-catch, and for statements that have only one
+ statement to execute are surrounded by curly braces
+\emph default
+: lines 549, 552, 556, 558, 562, 567
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+13.
+ Where practical, line length does not exceed 80 characters:
+\emph default
+ lines 55, 96, 97, 160, 162, 181, 226, 270, 276, 284, 293, 294, 295, 296,
+ 381, 393, 462, 488, 495, 509, 526, 554, 556.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+14.
+ When line length must exceed 80 characters, it does NOT exceed 120 characters:
+\emph default
+ lines 53, 60(javadoc), 63,
+\emph on
+ 
+\emph default
+68(javadoc), 71, 72, 79, 83, 88, 102, 115, 119, 123, 130, 141, 142, 148,
+ 192, 231, 236, 238, 245, 249, 271, 273, 290, 291, 300, 335, 343, 345, 351,
+ 367, 383, 386, 403, 413, 419, 426, 429, 430, 433, 437, 463, 469, 478, 490,
+ 496, 500, 502, 519, 528, 530, 550, 558, 562.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+18.
+ Comments are used to adequately explain what the class, interface, methods,
+ and blocks of code are doing: 
+\emph default
+the comments are unsufficient to explain what the class and the methods
+ do.
+ Line 47: not a complete or detailed description of the class.
+ Line 181: comment used to highlight that the else branch is useless and
+ should be deleted.
+ Every method lacks proper documentation, while some block of code has little
+ comments.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+19.
+ Commented out code contains a reason for being commented out and a date
+ it can be removed from the source file if determined it is no longer needed:
+ 
+\emph default
+line 391.
+ Some commented XML code is present but it's not meant to be executed, it
+ can be considered as a standard comment
+\end_layout
+
+\begin_layout Itemize
+
 \shape italic
 23.
  Check that the javadoc is complete (i.e., it covers all classes and files
