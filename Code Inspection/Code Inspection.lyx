@@ -378,6 +378,22 @@ key "key-2"
  and surely can be used to describe the implementation of this method.
 \end_layout
 
+\begin_layout Section
+Hours of work
+\end_layout
+
+\begin_layout Itemize
+Andrea Pace: 5 hours
+\end_layout
+
+\begin_layout Itemize
+Lorenzo Petrangeli: 3 hours
+\end_layout
+
+\begin_layout Itemize
+Tommaso Paulon: 4 hours
+\end_layout
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
